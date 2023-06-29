@@ -1,0 +1,204 @@
+/*HTML 標籤教學 - 小節作業*/
+/* .style{
+    font-weight: bold;
+}
+.link{
+    text-decoration: none;
+    color: #ff0000;
+}
+.link:hover{
+    color: #2600ff;
+}
+.hotlist{
+    list-style: none;
+}
+.hotlist a{
+    text-decoration: none;
+} */
+/*CSS 樣式小節作業*/
+/* .main{
+    max-width: 1000px;
+}
+.blue{
+    color: blue;
+    font-size: 50px;
+    font-family: Arial;
+}
+.black{
+    color: black;
+    font-size: 27px;
+    font-family: Arial;
+    font-weight: bold;
+    text-indent: 50px;
+}
+.red{
+    color: #ff0000;
+}
+.red:hover{
+    color: #2600ff;
+}
+h2{
+    font-size: 50px;
+    font-family: Arial;
+    border-left: 10px solid #ff0000 ;
+    border-bottom:20px solid #ff0000 ;
+}
+
+
+.list li{
+    margin-left: 10px;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+}
+.list-line{
+    text-decoration: line-through;
+}
+.logo-border{
+    border: 20px solid #838383;
+} */
+/*課前最終作業*/
+/* .warp{
+    width: 900px;
+    margin: 0 auto;
+}
+.header{
+    border: 1px solid #2c2c2c;
+    padding: 40px;
+}
+.header img{
+    width: 20%;
+}
+.contant{
+    border: 3px solid #e90303;
+    padding: 30px 30px 150px 30px;
+}
+.contant p{
+    line-height: 20px;
+    color: #032db4;
+    margin-bottom: 20px;
+}
+.contant a{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #032db4;
+}
+.footer p{
+    text-align: center;
+    padding: 20px 0 20px 0;
+    background-color: #ffc8d2;
+} */
+/*課前最終作業*/
+.warp{
+    width:1920px;
+    margin: 0 auto;
+
+}
+.header img,.header h1,.header h2{
+    position: absolute;
+    height: 192px;
+    font-family: "Castoro";
+    letter-spacing: 0.12em;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 192px;
+    margin-bottom: 0px;
+}
+.header h1{
+    width: 370px;
+    left: 312px;
+    top: 160px;
+}
+.header img{
+    width: 636px;
+    height: 848px;
+    left: 642px;
+    top: 352px;
+}
+.header h2{
+    position: absolute;
+    width: 622px;
+    left: 972px;
+    top: 1200px;
+}
+.content-info{
+    position: relative;
+    top: 1392px;
+    left: 0px;
+    padding: 48px 0px;
+    height: 432px;
+    background: #EFEFEF;
+}
+.content-txt{ 
+    display: flex;
+    justify-content: flex-end;
+}
+.content-txt p{
+    position: absolute;
+    left: 972px;
+    width: 587px;
+    height: 336px;
+    color: #000;
+    font-size: 32px;
+    line-height: 48px;
+    font-family: Castro;
+}
+.content-bottom{
+    display: block;
+    position: absolute;
+    top: 1904px;
+    padding-left: 312px;
+    padding-bottom: 140px;
+}
+.content-box{
+    display: block;
+    margin-bottom: 40px;
+}
+.content-title{
+    width: 636px;
+    color: #ae0000;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Castoro";
+    line-height: 60px;
+    border-bottom: 3px solid #ae0000;
+    margin-bottom: 16px;
+}
+
+.content-bottom-txt{
+    width: 636px;
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Castoro";
+    line-height: 36px;
+    margin-bottom: 8px;
+}
+.content-bottom-date{
+    width: 636px;
+    line-height:30px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    color: #949494;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Castoro", serif;
+    font-style: italic;
+}
+.footer{
+    position: relative;
+    top:2924px ;
+    background-color: #000;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 824px
+}
+.footer-img{
+    margin-right: 40px;
+}
+
