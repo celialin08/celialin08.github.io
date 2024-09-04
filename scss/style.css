@@ -284,7 +284,6 @@ ul li {
 }
 
 .section-padding-80-0 {
-  padding-top: 80px;
   padding-bottom: 0;
 }
 
@@ -408,7 +407,7 @@ ul li {
 }
 
 /* :: 6.0 Buttons CSS */
-.btn {
+.mona-btn {
   position: relative;
   z-index: 1;
   min-width: 180px;
@@ -426,18 +425,18 @@ ul li {
   transition-duration: 500ms;
   border: 2px solid #ffffff;
 }
-.btn:focus, .btn:hover {
+.mona-btn:focus, .mona-btn:hover {
   box-shadow: none;
   background-color: #000000;
   color: #ffffff;
   border-color: #000000;
 }
-.btn.btn-2 {
+.mona-btn.btn-2 {
   border-color: #018644;
   color: #018644;
   background-color: #ffffff;
 }
-.btn.btn-2:focus, .btn.btn-2:hover {
+.mona-btn.btn-2:focus, .mona-btn.btn-2:hover {
   color: #ffffff;
   background-color: #018644;
 }
@@ -562,7 +561,7 @@ ul li {
   position: absolute;
   width: 80%;
   height: 2px;
-  background-color: #018644;
+  background-color: #f6a4ce;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -717,7 +716,7 @@ ul li {
 .welcome-slides .owl-next {
   transition-duration: 500ms;
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   right: 15%;
   width: 100px;
   height: 100px;
@@ -734,6 +733,7 @@ ul li {
 }
 @media only screen and (min-width:992px) and (max-width:1199px) {
   .welcome-slides .owl-next {
+    display: none;
     width: 70px;
     height: 70px;
     line-height: 70px;
@@ -741,6 +741,7 @@ ul li {
 }
 @media only screen and (min-width:768px) and (max-width:991px) {
   .welcome-slides .owl-next {
+    display: none;
     width: 70px;
     height: 70px;
     line-height: 70px;
@@ -748,6 +749,7 @@ ul li {
 }
 @media only screen and (max-width:767px) {
   .welcome-slides .owl-next {
+    display: none;
     width: 50px;
     height: 50px;
     line-height: 50px;
@@ -759,6 +761,7 @@ ul li {
   z-index: 2;
   width: 100%;
   height: 900px;
+  margin: 0 0 50px 0;
   background-color: #ffffff;
 }
 @media only screen and (min-width:992px) and (max-width:1199px) {
@@ -784,11 +787,11 @@ ul li {
   background-position: top right;
   background-size: contain;
   top: 0;
-  right: 0;
+  right: -33px;
 }
 .single-welcome-slide .main-bg-img {
   position: absolute;
-  width: 50%;
+  width: 49%;
   height: calc(100% - 100px);
   bottom: 0;
   right: 15%;
@@ -913,19 +916,22 @@ ul li {
 }
 @media only screen and (min-width:992px) and (max-width:1199px) {
   .welcome-text h2 {
-    font-size: 72px;
+    display: none;
+    font-size: 24px;
     margin-left: -4px;
   }
 }
 @media only screen and (min-width:768px) and (max-width:991px) {
   .welcome-text h2 {
-    font-size: 72px;
+    display: none;
+    font-size: 24px;
     margin-left: -4px;
   }
 }
 @media only screen and (max-width:767px) {
   .welcome-text h2 {
-    font-size: 36px;
+    display: none;
+    font-size: 24px;
     margin-bottom: 15px;
     margin-left: 0;
   }
@@ -956,11 +962,11 @@ ul li {
 }
 
 /* :: 9.0 Gallery CSS */
-.projects-menu {
+.mona-projects-menu {
   position: relative;
   z-index: 1;
 }
-.projects-menu .btn {
+.mona-projects-menu .btn {
   padding: 0;
   background-color: transparent;
   font-size: 20px;
@@ -970,10 +976,10 @@ ul li {
   margin: 0 30px;
   font-weight: 600;
 }
-.projects-menu .btn:focus {
+.mona-projects-menu .btn:focus {
   box-shadow: none;
 }
-.projects-menu .btn.active {
+.mona-projects-menu .btn.active {
   color: #232323;
 }
 
@@ -1206,7 +1212,7 @@ ul li {
   }
 }
 
-.tab-content {
+.mona-tab-content {
   position: relative;
   z-index: 1;
   padding: 0 3%;
@@ -1354,21 +1360,21 @@ ul li {
   color: #018644;
 }
 
-.actor-slide,
-.all-model-slide,
-.models-slide,
-.singer-slide {
+.mona-actor-slide,
+.mona-all-model-slide,
+.mona-models-slide,
+.mona-singer-slide {
   position: relative;
   z-index: 1;
 }
-.actor-slide .owl-next,
-.actor-slide .owl-prev,
-.all-model-slide .owl-next,
-.all-model-slide .owl-prev,
-.models-slide .owl-next,
-.models-slide .owl-prev,
-.singer-slide .owl-next,
-.singer-slide .owl-prev {
+.mona-actor-slide .owl-next,
+.mona-actor-slide .owl-prev,
+.mona-all-model-slide .owl-next,
+.mona-all-model-slide .owl-prev,
+.mona-models-slide .owl-next,
+.mona-models-slide .owl-prev,
+.mona-singer-slide .owl-next,
+.mona-singer-slide .owl-prev {
   transition-duration: 500ms;
   width: 50px;
   height: 50px;
@@ -1383,37 +1389,37 @@ ul li {
   margin-top: -25px;
   left: -25px;
 }
-.actor-slide .owl-next.owl-next,
-.actor-slide .owl-prev.owl-next,
-.all-model-slide .owl-next.owl-next,
-.all-model-slide .owl-prev.owl-next,
-.models-slide .owl-next.owl-next,
-.models-slide .owl-prev.owl-next,
-.singer-slide .owl-next.owl-next,
-.singer-slide .owl-prev.owl-next {
+.mona-actor-slide .owl-next.owl-next,
+.mona-actor-slide .owl-prev.owl-next,
+.mona-all-model-slide .owl-next.owl-next,
+.mona-all-model-slide .owl-prev.owl-next,
+.mona-models-slide .owl-next.owl-next,
+.mona-models-slide .owl-prev.owl-next,
+.mona-singer-slide .owl-next.owl-next,
+.mona-singer-slide .owl-prev.owl-next {
   left: auto;
   right: -25px;
 }
-.actor-slide .owl-next:focus, .actor-slide .owl-next:hover,
-.actor-slide .owl-prev:focus,
-.actor-slide .owl-prev:hover,
-.all-model-slide .owl-next:focus,
-.all-model-slide .owl-next:hover,
-.all-model-slide .owl-prev:focus,
-.all-model-slide .owl-prev:hover,
-.models-slide .owl-next:focus,
-.models-slide .owl-next:hover,
-.models-slide .owl-prev:focus,
-.models-slide .owl-prev:hover,
-.singer-slide .owl-next:focus,
-.singer-slide .owl-next:hover,
-.singer-slide .owl-prev:focus,
-.singer-slide .owl-prev:hover {
+.mona-actor-slide .owl-next:focus, .mona-actor-slide .owl-next:hover,
+.mona-actor-slide .owl-prev:focus,
+.mona-actor-slide .owl-prev:hover,
+.mona-all-model-slide .owl-next:focus,
+.mona-all-model-slide .owl-next:hover,
+.mona-all-model-slide .owl-prev:focus,
+.mona-all-model-slide .owl-prev:hover,
+.mona-models-slide .owl-next:focus,
+.mona-models-slide .owl-next:hover,
+.mona-models-slide .owl-prev:focus,
+.mona-models-slide .owl-prev:hover,
+.mona-singer-slide .owl-next:focus,
+.mona-singer-slide .owl-next:hover,
+.mona-singer-slide .owl-prev:focus,
+.mona-singer-slide .owl-prev:hover {
   background-color: #018644;
 }
 
 @media only screen and (min-width:1200px) {
-  .model-area.model-page .tab-content .col-xl {
+  .mona-model-area.model-page .mona-tab-content .col-xl {
     flex: 0 0 20%;
     min-width: 20%;
     width: 20%;
@@ -1491,7 +1497,7 @@ ul li {
 .about-us-content {
   position: relative;
   z-index: 1;
-  padding-left: 10%;
+  padding-left: 3%;
 }
 @media only screen and (min-width:992px) and (max-width:1199px) {
   .about-us-content {
@@ -1529,7 +1535,7 @@ ul li {
   }
 }
 .about-us-content p {
-  margin-bottom: 30px;
+  margin-bottom: 2px;
 }
 .about-us-content p:last-child {
   margin-bottom: 0;
@@ -1581,11 +1587,11 @@ ul li {
   margin-bottom: 0;
 }
 
-.video-area {
+.mona-video-area {
   position: relative;
   z-index: 1;
 }
-.video-area .video-play-btn {
+.mona-video-area .video-play-btn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1600,7 +1606,7 @@ ul li {
   color: #ffffff;
   line-height: 50px;
 }
-.video-area .video-play-btn:focus, .video-area .video-play-btn:hover {
+.mona-video-area .video-play-btn:focus, .mona-video-area .video-play-btn:hover {
   box-shadow: none;
   background-color: #232323;
 }
@@ -1820,11 +1826,11 @@ ul li {
   color: #232323;
 }
 
-.pagination {
+.mona-pagination {
   position: relative;
   z-index: 1;
 }
-.pagination .pagination .page-item .page-link {
+.mona-pagination .pagination .page-item .page-link {
   width: 40px;
   height: 40px;
   border-radius: 3px;
@@ -1836,12 +1842,12 @@ ul li {
   color: #666666;
   font-size: 16px;
 }
-.pagination .pagination .page-item .page-link:focus, .pagination .pagination .page-item .page-link:hover {
+.mona-pagination .pagination .page-item .page-link:focus, .mona-pagination .pagination .page-item .page-link:hover {
   background-color: #018644;
   border-color: #018644;
   color: #ffffff;
 }
-.pagination .pagination .page-item.active .page-link {
+.mona-pagination .pagination .page-item.active .page-link {
   background-color: #018644;
   border-color: #018644;
   color: #ffffff;
@@ -1939,34 +1945,34 @@ ul li {
   margin-bottom: 0;
 }
 
-.blockquote {
+.mona-blockquote {
   position: relative;
   z-index: 1;
   margin-bottom: 30px;
   margin-top: 30px;
 }
-.blockquote .icon {
+.mona-blockquote .icon {
   flex: 0 0 70px;
   max-width: 70px;
   width: 70px;
 }
 @media only screen and (max-width:767px) {
-  .blockquote .icon {
+  .mona-blockquote .icon {
     flex: 0 0 50px;
     max-width: 50px;
     width: 50px;
   }
 }
-.blockquote .icon i {
+.mona-blockquote .icon i {
   font-size: 60px;
   color: #018644;
 }
 @media only screen and (max-width:767px) {
-  .blockquote .icon i {
+  .mona-blockquote .icon i {
     font-size: 30px;
   }
 }
-.blockquote .text h5 {
+.mona-blockquote .text h5 {
   font-size: 22px;
   font-style: italic;
   margin-bottom: 15px;
@@ -1975,39 +1981,39 @@ ul li {
   font-weight: 400;
 }
 @media only screen and (max-width:767px) {
-  .blockquote .text h5 {
+  .mona-blockquote .text h5 {
     font-size: 16px;
   }
 }
-.blockquote .text h6 {
+.mona-blockquote .text h6 {
   color: #a6a6a6;
   font-size: 16px;
 }
 
-.post-share {
+.mona-post-share {
   position: relative;
   z-index: 1;
 }
 @media only screen and (max-width:767px) {
-  .post-share h6 {
+  .mona-post-share h6 {
     font-size: 10px;
     margin-right: 10px !important;
   }
 }
-.post-share .social-info- a {
+.mona-post-share .social-info- a {
   display: inline-block;
   color: #232323;
   font-size: 16px;
   margin-right: 15px;
 }
-.post-share .social-info- a:last-child {
+.mona-post-share .social-info- a:last-child {
   margin-right: 0;
 }
-.post-share .social-info- a:focus, .post-share .social-info- a:hover {
+.mona-post-share .social-info- a:focus, .mona-post-share .social-info- a:hover {
   color: #018644;
 }
 @media only screen and (max-width:767px) {
-  .post-share .social-info- a {
+  .mona-post-share .social-info- a {
     font-size: 12px;
     margin-right: 5px;
   }
@@ -2049,7 +2055,7 @@ ul li {
 }
 
 /* :: 15.0 CTA CSS */
-.cta-area {
+.mona-cta-area {
   position: relative;
   z-index: 1;
   background-color: #018644;
@@ -2343,6 +2349,7 @@ ul li {
   position: relative;
   z-index: 1;
   background-color: #f2f4f5;
+  margin: 30px 0 0 0;
 }
 
 .single-footer-widget {
@@ -2449,22 +2456,22 @@ ul li {
 }
 
 /* :: 19.0 Contact Area */
-.contact-area {
+.mona-contact-area {
   position: relative;
   z-index: 1;
 }
-.contact-area .google-maps {
+.mona-contact-area .google-maps {
   position: relative;
   z-index: 1;
   width: 100%;
   height: 650px;
 }
 @media only screen and (max-width:767px) {
-  .contact-area .google-maps {
+  .mona-contact-area .google-maps {
     height: 280px;
   }
 }
-.contact-area .google-maps iframe {
+.mona-contact-area .google-maps iframe {
   width: 100%;
   height: 100%;
   border: none;
@@ -2501,59 +2508,59 @@ ul li {
   width: 100%;
 }
 
-.contact-form {
+.mona-contact-form {
   position: relative;
   z-index: 1;
 }
-.contact-form .contact-heading {
+.mona-contact-form .contact-heading {
   margin-bottom: 20px;
 }
-.contact-form .contact-heading h2 {
+.mona-contact-form .contact-heading h2 {
   display: block;
   margin-bottom: 15px;
   font-size: 48px;
 }
 @media only screen and (min-width:992px) and (max-width:1199px) {
-  .contact-form .contact-heading h2 {
+  .mona-contact-form .contact-heading h2 {
     font-size: 30px;
   }
 }
 @media only screen and (min-width:768px) and (max-width:991px) {
-  .contact-form .contact-heading h2 {
+  .mona-contact-form .contact-heading h2 {
     font-size: 36px;
   }
 }
 @media only screen and (max-width:767px) {
-  .contact-form .contact-heading h2 {
+  .mona-contact-form .contact-heading h2 {
     font-size: 24px;
   }
 }
-.contact-form .contact-heading p {
+.mona-contact-form .contact-heading p {
   margin-bottom: 0;
   font-size: 16px;
 }
 @media only screen and (max-width:767px) {
-  .contact-form .contact-heading p {
+  .mona-contact-form .contact-heading p {
     font-size: 14px;
   }
 }
-.contact-form label {
+.mona-contact-form label {
   font-size: 16px;
   color: #a6a6a6;
   display: block;
   margin-bottom: 15px;
 }
-.contact-form .form-control {
+.mona-contact-form .form-control {
   width: 100%;
   height: 50px;
   padding: 0 20px;
   border-radius: 0;
 }
-.contact-form .form-control:focus {
+.mona-contact-form .form-control:focus {
   box-shadow: none;
   border-color: #018644;
 }
-.contact-form textarea.form-control {
+.mona-contact-form textarea.form-control {
   height: 110px;
   padding: 20px;
 }/*# sourceMappingURL=style.css.map */
